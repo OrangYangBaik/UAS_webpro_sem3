@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <a href="/halaman/main">back to home</a>
+    <a href="/pages/main">back to home</a>
     <br>
     <table>
         <tr>

@@ -3,7 +3,9 @@
     <div class="container d-flex justify-content-between align-items-center">
 
         <div id="logo">
-            <a href="/"><img src="{{ asset('/') }}assets/img/logo.png" alt="" height="70"></a>
+            <a href="/">
+                <img src="{{ asset('/') }}assets/img/logo.png" alt="" height="70">
+            </a>
             <!-- Uncomment below if you prefer to use a text logo -->
             <!--<h1><a href="index.html">Regna</a></h1>-->
         </div>
@@ -15,6 +17,10 @@
                 <li><a class="nav-link scrollto" href="#about2">Gallery</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio">Watch</a></li>
                 <li><a class="nav-link scrollto" href="#team">Berita</a></li>
+                @if (Auth::user())
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                @endif
                 <!--
                 <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
@@ -36,7 +42,6 @@
                 -->
                 <li><a class="nav-link scrollto" href="#contact">Download</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Login</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
